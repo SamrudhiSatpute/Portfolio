@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samruddhi Satpute — Backend Developer</title>
+<meta name="description" content="Samruddhi Sanjay Satpute — Aspiring Java Backend Developer. Spring Boot, MySQL, REST APIs, DevOps.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav-wrap">
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav-brand">Samruddhi Satpute</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="route-link">About</a></li>
+      <li><a href="#projects" class="route-link">Projects</a></li>
+      <li><a href="#skills" class="route-link">Skills</a></li>
+      <li><a href="#achievements" class="route-link">Achievements</a></li>
+      <li><a href="#contact" class="route-link nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Backend Developer</p>
+        <h1 class="hero-title"><span id="typedName"></span></h1>
+        <p class="hero-role" id="typedRole"></p>
+        <p class="hero-desc">
+          Aspiring Java backend developer building scalable APIs and data-driven systems —
+          currently completing a B.Tech in Computer Science, shipping projects in
+          Spring Boot, MySQL, and DevOps tooling along the way.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="Samruddhi_Satpute_Resume.pdf" class="btn btn-ghost" download>Download résumé</a>
+        </div>
+        <div class="hero-links">
+          <a href="mailto:Satputesamruddhi24@gmail.com">Email</a>
+          <span class="sep">·</span>
+          <a href="https://linkedin.com/in/samruddhisatpute" target="_blank" rel="noopener">LinkedIn</a>
+          <span class="sep">·</span>
+          <a href="https://github.com/SamrudhiSatpute" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="assets/hero.jpg" alt="Samruddhi Satpute">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">About</p>
+        <h2>A little about me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm Samruddhi, currently in my third year of a B.Tech in Computer Science at
+            Punyashlok Ahilyadevi Holkar Solapur University, maintaining a 9+ SGPA.
+            My focus is backend engineering — designing clean APIs, modelling data
+            sensibly, and writing systems that are easy to reason about six months later.
+          </p>
+          <p>
+            Outside coursework I build end-to-end projects to practice what production
+            backend work actually looks like: layered architecture, persistence, CI/CD,
+            and the occasional detour into computer vision. I like picking things apart
+            until I understand why they work, not just that they do.
+          </p>
+        </div>
+
+        <div class="about-facts reveal">
+          <div class="fact-card">
+            <span class="fact-label">Location</span>
+            <span class="fact-value">Solapur, Maharashtra, India</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Focus</span>
+            <span class="fact-value">Java · Spring Boot · MySQL</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Status</span>
+            <span class="fact-value">
+              <span class="live-dot"></span> Open to internships &amp; junior roles
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDUCATION TIMELINE -->
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-year">2023 — 2027</div>
+          <div class="timeline-body">
+            <h3>B.Tech, Computer Science <span class="tag-inline">Pursuing</span></h3>
+            <p>Punyashlok Ahilyadevi Holkar Solapur University, Solapur — 9+ SGPA</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2021 — 2023</div>
+          <div class="timeline-body">
+            <h3>HSC</h3>
+            <p>A.D. Joshi Junior College, Solapur — 69%</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2018 — 2021</div>
+          <div class="timeline-body">
+            <h3>SSC</h3>
+            <p>Suyash Central School, Solapur — 89%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card reveal">
+          <span class="badge badge-a">REST API</span>
+          <h3>Student Management System</h3>
+          <p>
+            A layered backend application following Controller–Service–Repository
+            architecture, with RESTful CRUD endpoints, database persistence, and
+            centralized exception handling.
+          </p>
+          <ul class="tag-list">
+            <li>Java</li><li>Spring Boot</li><li>Hibernate</li><li>Spring Data JPA</li><li>MySQL</li>
+          </ul>
+          <div class="project-foot">
+            <a href="https://github.com/SamrudhiSatpute" target="_blank" rel="noopener">Source on GitHub →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <span class="badge badge-b">Computer Vision</span>
+          <h3>GuardianEye</h3>
+          <p>
+            An AI-driven CCTV surveillance system that analyzes footage in real time to
+            flag suspicious activity, with a video processing pipeline and automated
+            security alerts. Hackathon-winning build.
+          </p>
+          <ul class="tag-list">
+            <li>Python</li><li>Computer Vision</li><li>Real-time pipeline</li>
+          </ul>
+          <div class="project-foot">
+            <a href="https://github.com/SamrudhiSatpute" target="_blank" rel="noopener">Source on GitHub →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <span class="badge badge-c">DevOps</span>
+          <h3>Automated Build &amp; Deployment (CI/CD)</h3>
+          <p>
+            A CI/CD pipeline that automates build and deployment with version control,
+            build automation, and containerized deployments end to end.
+          </p>
+          <ul class="tag-list">
+            <li>Git</li><li>Jenkins</li><li>Docker</li>
+          </ul>
+          <div class="project-foot">
+            <a href="https://github.com/SamrudhiSatpute" target="_blank" rel="noopener">Source on GitHub →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Toolbox</p>
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-block reveal">
+          <h3>Languages</h3>
+          <ul class="chip-list">
+            <li>Java</li><li>JavaScript</li><li>Python</li>
+          </ul>
+        </div>
+        <div class="skill-block reveal">
+          <h3>Backend</h3>
+          <ul class="chip-list">
+            <li>Spring Boot</li><li>REST APIs</li><li>Hibernate</li><li>Spring Data JPA</li>
+          </ul>
+        </div>
+        <div class="skill-block reveal">
+          <h3>Frontend</h3>
+          <ul class="chip-list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-block reveal">
+          <h3>Databases</h3>
+          <ul class="chip-list">
+            <li>MySQL</li>
+          </ul>
+        </div>
+        <div class="skill-block reveal">
+          <h3>DevOps &amp; Cloud</h3>
+          <ul class="chip-list">
+            <li>Docker</li><li>Jenkins</li><li>Linux</li>
+          </ul>
+        </div>
+        <div class="skill-block reveal">
+          <h3>Tools</h3>
+          <ul class="chip-list">
+            <li>Git</li><li>GitHub</li><li>VS Code</li><li>Maven</li><li>Postman</li>
+          </ul>
+        </div>
+        <div class="skill-block reveal">
+          <h3>Core CS</h3>
+          <ul class="chip-list">
+            <li>DSA</li><li>OOP</li><li>DBMS</li><li>Operating Systems</li><li>Computer Networks</li>
+          </ul>
+        </div>
+        <div class="skill-block reveal">
+          <h3>Working Style</h3>
+          <ul class="chip-list">
+            <li>Team collaboration</li><li>Problem solving</li><li>Communication</li><li>Presentation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cert-row reveal">
+        <h3 class="cert-heading">Certifications &amp; Courses</h3>
+        <div class="cert-list">
+          <div class="cert-item">
+            <span class="cert-dot"></span>
+            <span>Java Programming Masterclass <em>— Udemy</em></span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-dot"></span>
+            <span>Google Cloud Computing Foundations <em>— Google Cloud</em></span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-dot"></span>
+            <span>DevOps and Cloud Computing Internship <em>— WisdomSprouts</em></span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-dot"></span>
+            <span>Spring Boot REST API Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section section-alt" id="achievements">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Recognition</p>
+        <h2>Achievements</h2>
+      </div>
+
+      <div class="log-list">
+        <div class="log-item reveal">
+          <span class="log-tag win">Winner</span>
+          <p>Won the hackathon at <strong>Fabtech College, Pandharpur</strong> for
+            GuardianEye, an AI-driven CCTV surveillance and crime detection system.</p>
+        </div>
+        <div class="log-item reveal">
+          <span class="log-tag place">Runner-up</span>
+          <p>Runner-up at the department-level <strong>Smart India Hackathon (SIH)</strong>,
+            qualifying for the institute-level round.</p>
+        </div>
+        <div class="log-item reveal">
+          <span class="log-tag part">Participant</span>
+          <p>Competed in <strong>Chakravyuh 2.0</strong>, a technical innovation and
+            problem-solving competition hosted by SVERI College of Engineering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Let's talk</h2>
+        <p class="section-sub">Open to internship and junior backend roles — reach out directly or drop a message below.</p>
+      </div>
+
+      <div class="contact-grid reveal">
+        <form class="contact-form" id="contactForm">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your name">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" required placeholder="What are you building?"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+
+        <div class="contact-direct">
+          <a class="direct-link" href="mailto:Satputesamruddhi24@gmail.com">
+            <span class="direct-label">Email</span>
+            <span class="direct-value">Satputesamruddhi24@gmail.com</span>
+          </a>
+          <a class="direct-link" href="tel:+917420962050">
+            <span class="direct-label">Phone</span>
+            <span class="direct-value">+91 74209 62050</span>
+          </a>
+          <a class="direct-link" href="https://linkedin.com/in/samruddhisatpute" target="_blank" rel="noopener">
+            <span class="direct-label">LinkedIn</span>
+            <span class="direct-value">/in/samruddhisatpute</span>
+          </a>
+          <a class="direct-link" href="https://github.com/SamrudhiSatpute" target="_blank" rel="noopener">
+            <span class="direct-label">GitHub</span>
+            <span class="direct-value">/SamrudhiSatpute</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <span>© <span id="year"></span> Samruddhi Satpute</span>
+    <span class="footer-status"><span class="live-dot"></span> Available for work</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
